@@ -5,21 +5,21 @@
 class Invoicer < Formula
   desc "Automate fraternity dues invoicing via Airtable and QuickBooks Online."
   homepage "https://github.com/OPPF-IHQ-IT/invoicer"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/OPPF-IHQ-IT/invoicer/releases/download/v0.3.0/invoicer_darwin_amd64.tar.gz"
-      sha256 "112fae90462268a61a5a24d482bf94a494612b275e01de54828b6978622fa007"
+      url "https://github.com/OPPF-IHQ-IT/invoicer/releases/download/v0.3.1/invoicer_darwin_amd64.tar.gz"
+      sha256 "31a275946cea16142287d6b08d405f28a2012cdaadb5ea9ca5a82241679d76e2"
 
       define_method(:install) do
         bin.install "invoicer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/OPPF-IHQ-IT/invoicer/releases/download/v0.3.0/invoicer_darwin_arm64.tar.gz"
-      sha256 "a0a107ae51c7c94036d47513212324042757b6456703b9cb7c729a6e9cd4fcde"
+      url "https://github.com/OPPF-IHQ-IT/invoicer/releases/download/v0.3.1/invoicer_darwin_arm64.tar.gz"
+      sha256 "76d6ac4d1073c7b863de8dc150f53135230057716c3d29d4b518a22a086bfddb"
 
       define_method(:install) do
         bin.install "invoicer"
@@ -29,15 +29,15 @@ class Invoicer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/OPPF-IHQ-IT/invoicer/releases/download/v0.3.0/invoicer_linux_amd64.tar.gz"
-      sha256 "f2fef43889bd378cfb1ca647096d4693e18aff485d15436d31009d0c9d54939a"
+      url "https://github.com/OPPF-IHQ-IT/invoicer/releases/download/v0.3.1/invoicer_linux_amd64.tar.gz"
+      sha256 "0dd1c7b5914a5c1821bb17d231f69f8b8cef881283da42486a172218b6217851"
       define_method(:install) do
         bin.install "invoicer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/OPPF-IHQ-IT/invoicer/releases/download/v0.3.0/invoicer_linux_arm64.tar.gz"
-      sha256 "66c2af21e95e23f4e28f69b88024264d18682198c5d99f4c5dbf472e1549461f"
+      url "https://github.com/OPPF-IHQ-IT/invoicer/releases/download/v0.3.1/invoicer_linux_arm64.tar.gz"
+      sha256 "6f914f433a057d401e95d34c145e1acb640e23d7722a45bc570ab0656f45ad2e"
       define_method(:install) do
         bin.install "invoicer"
       end
